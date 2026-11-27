@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マイテストページ</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      background-color: #2ecc71;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">GitHub Pages 起動成功！</h1>
+  <p>この画面が見えていれば、ここから何でも作れます。</p>
+  <button onclick="changeText()">ここを押してみて</button>
+
+  <script>
+    // 【調整可能な変数】ボタンを押したときに変わる文字
+    const NEXT_MESSAGE = "バッチリ動いています！🎉";
+
+    function changeText() {
+      document.getElementById("title").textContent = NEXT_MESSAGE;
+    }
+  </script>
+</body>
+</html>
